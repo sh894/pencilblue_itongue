@@ -26,7 +26,7 @@ function ThemeService(useMemory, useCache) {
       timeout: pb.config.plugins.caching.memory_timeout
   };
 
-  //add in-memory service
+    //add in-memory service
 	if (useMemory){
 		services.push(new pb.MemoryEntityService(options));
 	}
